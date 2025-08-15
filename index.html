@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murad Amin | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CSS for a smooth scrolling and modern look */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        .nav-link:hover {
+            color: #58a6ff;
+        }
+
+        .project-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .icon {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .icon:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="bg-gray-900 sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white hover:text-blue-400 transition-colors duration-300">
+                Murad Amin
+            </a>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="nav-menu" class="hidden md:flex space-x-8 text-lg">
+                <a href="#hero" class="nav-link text-white">Home</a>
+                <a href="#projects" class="nav-link text-white">Projects</a>
+                <a href="#about" class="nav-link text-white">About</a>
+                <a href="#contact" class="nav-link text-white">Contact</a>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-900 absolute w-full left-0 z-40">
+            <div class="flex flex-col items-center py-4 space-y-4">
+                <a href="#hero" class="nav-link text-white text-lg">Home</a>
+                <a href="#projects" class="nav-link text-white text-lg">Projects</a>
+                <a href="#about" class="nav-link text-white text-lg">About</a>
+                <a href="#contact" class="nav-link text-white text-lg">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="h-screen flex items-center justify-center bg-cover bg-center text-white relative">
+            <!-- Background gradient overlay for a modern tech feel -->
+            <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-black opacity-80"></div>
+            <div class="text-center p-8 md:p-12 rounded-lg relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-md">
+                    Driving Digital Transformation with Innovative Solutions
+                </h1>
+                <p class="text-lg md:text-2xl mb-8 font-light max-w-2xl mx-auto">
+                    A Web Developer & Python Software Engineer with a passion for
+                    creating innovative solutions that align with organizational goals and foster sustainable growth.
+                </p>
+                <a href="#projects"
+                    class="px-6 py-3 bg-blue-600 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                    View My Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-white">My Projects</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project Item 1: Web Development -->
+                    <div class="project-item bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/800x600/161b22/c9d1d9?text=Web+Development"
+                            alt="Web Development Project" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Website Administration & Management</h3>
+                            <p class="text-gray-400">Led the design, development, and maintenance of organizational
+                                websites, focusing on functionality and security.</p>
+                        </div>
+                    </div>
+                    <!-- Project Item 2: AI & Automation -->
+                    <div class="project-item bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/800x600/161b22/c9d1d9?text=AI+Automation"
+                            alt="AI Automation Project" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">AI Automation & Personalized Assistants</h3>
+                            <p class="text-gray-400">Explored and implemented solutions using Generative UI and AI to
+                                automate tasks and improve user experience.</p>
+                        </div>
+                    </div>
+                    <!-- Project Item 3: Network Administration -->
+                    <div class="project-item bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/800x600/161b22/c9d1d9?text=Network+Infrastructure"
+                            alt="Network Administration Project" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Network Infrastructure & IT Governance</h3>
+                            <p class="text-gray-400">Managed network infrastructure and implemented IT policies to
+                                enhance security, reliability, and compliance.</p>
+                        </div>
+                    </div>
+                    <!-- Project Item 4: Project Management -->
+                    <div class="project-item bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/800x600/161b22/c9d1d9?text=Project+Management"
+                            alt="IT Project Management" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">IT Project & Team Leadership</h3>
+                            <p class="text-gray-400">Led cross-functional teams and projects to enhance IT service
+                                delivery and streamline operations.</p>
+                        </div>
+                    </div>
+                    <!-- Project Item 5: Cybersecurity -->
+                    <div class="project-item bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/800x600/161b22/c9d1d9?text=Cybersecurity"
+                            alt="Cybersecurity Initiative" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Cybersecurity Implementation</h3>
+                            <p class="text-gray-400">Implemented IT security policies and procedures to safeguard
+                                sensitive information and mitigate risks.</p>
+                        </div>
+                    </div>
+                    <!-- Project Item 6: Python Development -->
+                    <div class="project-item bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/800x600/161b22/c9d1d9?text=Python+Development"
+                            alt="Python Development Project" class="w-full h-auto object-cover">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Python Software Engineering</h3>
+                            <p class="text-gray-400">Utilized Python skills to develop and engineer software solutions,
+                                as a certified Python Essentials developer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-gray-800">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <!-- Updated with your provided photo -->
+                    <img src="13.jpg" alt="Murad Amin's photo" class="w-full rounded-full md:rounded-lg shadow-2xl">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">About Me</h2>
+                    <p class="text-lg text-gray-300 mb-4">
+                        Hello! My name is Murad Amin. I am a dynamic IT professional and a Computer Science Master's
+                        Candidate dedicated to driving digital transformation. With extensive experience in leadership
+                        roles, I specialize in IT and network administration, website management, and project
+                        management.
+                    </p>
+                    <p class="text-lg text-gray-300">
+                        My skills in team leadership, strategic planning, and the implementation of IT policies
+                        contribute to improved governance and compliance. I am committed to delivering innovative
+                        solutions that align with organizational goals and foster sustainable growth.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-white mb-12">Get in Touch</h2>
+                <div class="max-w-xl mx-auto bg-gray-800 p-8 rounded-lg shadow-xl">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-lg font-medium text-white mb-2">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-lg font-medium text-white mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-lg font-medium text-white mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full px-6 py-3 bg-blue-600 text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 transition-colors duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.linkedin.com/in/muradamin/" target="_blank"
+                    class="hover:text-white transition-colors duration-300 icon">
+                    <!-- LinkedIn Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-linkedin">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+                <!-- Adding a placeholder for Github - a common social link for developers -->
+                <a href="#" class="hover:text-white transition-colors duration-300 icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-github">
+                        <path d="M15 22s-4-1-4-5" />
+                        <path d="M12 17s2-1 3-2" />
+                        <path
+                            d="M12 11L9.5 8.5C8 7 7 6 6 6s-1 .5-2 1.5l-2.5 2.5a.5.5 0 0 0 0 .7l.5.5a.5.5 0 0 0 .7 0l2-2a.5.5 0 0 1 .7 0l2 2a.5.5 0 0 1 0 .7l-2 2a.5.5 0 0 1 0 .7L8 15" />
+                        <path
+                            d="M12 11L14.5 8.5C16 7 17 6 18 6s1 .5 2 1.5l2.5 2.5a.5.5 0 0 0 0 .7l-.5.5a.5.5 0 0 0-.7 0l-2-2a.5.5 0 0 1-.7 0l-2 2a.5.5 0 0 1 0 .7l2 2a.5.5 0 0 1 0 .7L16 15" />
+                    </svg>
+                </a>
+                <a href="mailto:muradamen10@gmail.com" class="hover:text-white transition-colors duration-300 icon">
+                    <!-- Email Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-mail">
+                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                </a>
+            </div>
+            <p>&copy; 2024 Murad Amin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const menu = document.getElementById('mobile-menu');
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
